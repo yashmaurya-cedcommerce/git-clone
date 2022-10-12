@@ -2,37 +2,442 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.homeContainer
+{
+  background-color: #2a2a2a;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.homeHeading
+{
+  font-size: 3vw;
+  padding: 3% 0%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchContainer
+{
+  width: 55%;
+  margin: auto;
+  padding: 0% 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.searchContainer > div
+{
+  width: 90%;
+  border-radius: none;
+  border: none;
+}
+
+#PolarisTextField7
+{
+  width: 100%;
+  border: none;
+}
+
+.searchBtn
+{
+  width: 10%;
+  height: 3.5vw;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.resultsContainer
+{
+  width: 70%;
+  margin: auto;
+  padding: 5% 0%;
+}
+
+.eachResultDiv
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e45370;
+  border-radius: 8px;
+  padding: 3% 2%;
+  margin: 3% 0%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.eachResultImageDiv
+{
+  width: 30%;
+}
+
+.eachResultImageDiv img
+{
+  width: 60%;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.eachResultDetailsDiv
+{
+  width: 70%;
+  text-align: start;
+  color: white;
+}
+
+.resultNameFlex
+{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0%;
+}
+
+.viewProfileBtn
+{
+  width: 50%;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #2a2a2a;
+  cursor: pointer;
+}
+
+.resultName
+{
+  font-size: 1.8vw;
+  margin: 1% 0%;
+}
+
+.resultMotto
+{
+  font-size: 1.3vw;
+  margin: 1% 0%;
+}
+
+.statsDiv
+{
+  margin: 3% 0%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tagsDiv
+{
+  width: 100%;
+  margin: 3% 0%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1vw;
+  color: white;
+}
+
+.tagDiv 
+{
+  background-color: #2a2a2a;
+  padding: 0% 0.5%;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PROFILE PAGE CSS  */
+
+.profileContainer
+{
+  width: 100%;
+}
+
+.navbarContainer
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 1%;
+  background-color: #24292f;
+}
+
+.firstPartNav
+{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLogo
+{
+  width: 20%;
+  color: white;
+  font-size: 2.5vw;
+}
+
+.profileSearchBar
+{
+  width: 80%;
+  border: 1px solid white;
+  background-color: #24292f;
+  border-radius: 3px;
+  height: 2.5vw;
+  font-size: 1.2vw;
+  color: white;
+}
+
+.secondPartNav
+{
+  width: 55%;
+  display: flex;
+  /* justify-content: space-between; */
+  color: white;
+  
+}
+
+.secondNavOptions
+{
+  /* width: 25%; */
+  font-size: 1.3vw;
+  font-weight: bolder;
+  padding: 0.5% 3%;
+  text-align: start;
+}
+
+.thirdPartNav
+{
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thirdNavOptions
+{
+  width: 33%;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  padding: 0.5% 1%;
+  color: white;
+}
+
+.mainProfileContainer
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 0%;
+}
+
+.profileDetailsDiv
+{
+  width: 30%;
+}
+
+.profileImage
+{
+  width: 75%;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.profileNameDiv
+{
+  width: 85%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.profileName
+{
+  font-size: 2vw;
+  font-family: bolder;
+  text-align: start;
+}
+
+.profileLogin
+{
+  font-size: 1.5vw;
+  font-family: bolder;
+  text-align: start;
+  opacity: 75%;
+}
+
+.profileBtnDiv
+{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profileBtnDiv button
+{
+  width: 48%;
+  font-size: 1.3vw;
+  padding: 3% 0%;
+  border-radius: 6px;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.profileBioDiv
+{
+  font-size: 1.4vw;
+  text-align: start;
+  width: 85%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.profileFollowDiv
+{
+  width: 85%;
+  margin: auto;
+  font-size: 1.3vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profileFollowDiv p
+{
+  width: 50%;
+  text-align: start;
+}
+
+.profileExtraDetailDiv
+{
+  width: 85%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 1.4vw;
+  text-align: start;
+}
+
+.eachDetailDiv
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 0%;
+}
+
+.extraDetailIcon
+{
+  width: 10%;
+}
+
+.extraDetailText
+{
+  width: 90%;
+}
+
+
+
+
+
+
+
+.profileIntroContainer
+{
+  width: 70%;
+}
+
+.overviewHeading
+{
+  text-align: start;
+  font-size: 1.7vw;
+}
+
+.dummyText
+{
+  font-size: 1.4vw;
+  text-align: start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* REPO PAGE CSS  */
+
+.eachRepoDiv
+{
+  width: 100%;
+  margin: auto;
+  text-align: start;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.eachRepoName
+{
+  font-size: 1.8vw;
+  color: #1069da;
+  font-weight: bolder;
+}
+
+.eachRepoVisibility
+{
+  font-size: 1vw;
+  color: #717881;
+  border: 1px solid #717881;
+  border-radius: 10px;
+  padding: 0% 1%;
+  font-weight: lighter;
+}
+
+.eachRepoFooter
+{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.eachRepoLanguage
+{
+  text-align: start;
+  font-size: 1.2vw;
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.eachRepoStargazer
+{
+  text-align: start;
+  font-size: 1.2vw;
+  color: rgb(0, 0, 0, 0.6);
 }
